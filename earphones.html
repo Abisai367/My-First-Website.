@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwetu Electronics</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="purer.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to Kwetu Electronics</h1>
+</header>
+
+<nav class="nav">
+    <ul>
+        <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="dropdown">
+            <button type="button" class="drop-btn" id="dropBtn">
+                <i class="fa-solid fa-bars"></i> Categories
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <ul class="submenu" id="submenu">
+                <li><a href="phones.html"><i class="fa-solid fa-mobile"></i>Phones</a></li>
+                <li><a href="laptops.html"><i class="fa-solid fa-laptop"></i>Laptops</a></li>
+                <li><a href="chargers.html"><i class="fa-solid fa-bolt"></i>Chargers</a></li>
+                <li><a href="earphones.html"><i class="fa-solid fa-headphones"></i>Earphones</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-gift"></i> Gifts</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-cart-arrow-down"></i> My Cart</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-regular fa-user"></i> Account</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </li>
+    </ul>
+</nav>
+
+
+<div class="section-title">
+    <h2>Earphones</h2>
+</div>
+
+<div class="brake">
+
+    <div class="product-card">
+        <img src="earphones/1.png" alt="Earphones">
+        <h4>HP Earphones</h4>
+        <div class="desc">
+            <span>Ksh 150</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="earphones/2.jpeg" alt="Earphones">
+        <h4>Lenovo Earphones</h4>
+        <div class="desc">
+            <span>Ksh 200</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="earphones/3.jpeg" alt="Earphones">
+        <h4>Apple Earphones</h4>
+        <div class="desc">
+            <span>Ksh 300</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="earphones/4.jpeg" alt="Earphones">
+        <h4>Asus Earphones</h4>
+        <div class="desc">
+            <span>Ksh 250</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="earphones/5.jpeg" alt="Earphones">
+        <h4>HP touch screen Earphones</h4>
+        <div class="desc">
+            <span>Ksh 300</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="earphones/6.jpeg" alt="ThinkPad Earphones">
+        <h4>ThinkPad Earphones</h4>
+        <div class="desc">
+            <span>Ksh 200</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+<script>
+const dropBtn = document.getElementById("dropBtn");
+const submenu = document.getElementById("submenu");
+
+dropBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    submenu.classList.toggle("show");
+});
+
+document.addEventListener("click", function () {
+    submenu.classList.remove("show");
+});
+</script>
+
+</body>
+</html>
